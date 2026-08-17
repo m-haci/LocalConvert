@@ -1,0 +1,201 @@
+<Page
+    x:Class="LocalConvert.App.Views.ConversionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:LocalConvert.App.ViewModels"
+    Unloaded="OnUnloaded"
+    AllowDrop="True"
+    DragOver="OnDragOver"
+    Drop="OnDrop">
+    <ScrollViewer>
+        <StackPanel MaxWidth="{StaticResource ContentMaxWidth}" Padding="40,24,40,48" Spacing="22">
+            <StackPanel Spacing="6">
+                <TextBlock Text="{x:Bind ViewModel.ConverterTitle, Mode=OneWay}" Style="{StaticResource TitleTextBlockStyle}" />
+                <TextBlock
+                    Text="{x:Bind ViewModel.ConverterDescription, Mode=OneWay}"
+                    Style="{StaticResource BodyTextBlockStyle}"
+                    Opacity="0.8"
+                    TextWrapping="Wrap" />
+            </StackPanel>
+
+            <InfoBar
+                IsOpen="{x:Bind ViewModel.ShowOfficeMissingHint, Mode=OneWay}"
+                Severity="Warning"
+                IsClosable="False"
+                x:Uid="Conversion_OfficeMissing" />
+
+            <Border
+                AllowDrop="True"
+                DragOver="OnDragOver"
+                Drop="OnDrop"
+                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                BorderBrush="{ThemeResource ControlStrokeColorDefaultBrush}"
+                BorderThickness="1"
+                CornerRadius="14"
+                Padding="20"
+                Visibility="{x:Bind ToVisibility(ViewModel.HasNoFiles), Mode=OneWay}">
+                <StackPanel Spacing="12" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <FontIcon Glyph="&#xE8B5;" FontSize="24" Opacity="0.8" />
+                    <TextBlock x:Uid="Conversion_DropHint" TextAlignment="Center" TextWrapping="Wrap" />
+                    <Button
+                        x:Uid="Conversion_AddFiles"
+                        Command="{x:Bind ViewModel.AddFilesCommand}"
+                        Style="{StaticResource AccentButtonStyle}"
+                        HorizontalAlignment="Center" />
+                </StackPanel>
+            </Border>
+
+            <StackPanel Spacing="10" Visibility="{x:Bind ToVisibility(ViewModel.HasFiles), Mode=OneWay}">
+                <Grid>
+                    <TextBlock x:Uid="Conversion_Files" Style="{StaticResource SubtitleTextBlockStyle}" />
+                    <TextBlock
+                        Text="{x:Bind ViewModel.FileCountText, Mode=OneWay}"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Opacity="0.7" />
+                </Grid>
+                <TextBlock Text="{x:Bind ViewModel.TotalSizeText, Mode=OneWay}" Style="{StaticResource CaptionTextBlockStyle}" Opacity="0.75" />
+                <ItemsControl ItemsSource="{x:Bind ViewModel.InputFiles}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate x:DataType="vm:InputFileItemViewModel">
+                            <Border
+                                Margin="0,0,0,8"
+                                Padding="12,10"
+                                Background="{ThemeResource SubtleFillColorSecondaryBrush}"
+                                CornerRadius="10">
+                                <Grid ColumnSpacing="8">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel Spacing="2">
+                                        <TextBlock Text="{x:Bind Name}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" />
+                                        <TextBlock Text="{x:Bind SizeText}" Style="{StaticResource CaptionTextBlockStyle}" Opacity="0.7" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="4">
+                                        <Button
+                                            Command="{x:Bind MoveUpCommand}"
+                                            IsEnabled="{x:Bind CanMoveUp}"
+                                            Padding="8,4">
+                                            <FontIcon Glyph="&#xE74A;" FontSize="12" />
+                                        </Button>
+                                        <Button
+                                            Command="{x:Bind MoveDownCommand}"
+                                            IsEnabled="{x:Bind CanMoveDown}"
+                                            Padding="8,4">
+                                            <FontIcon Glyph="&#xE74B;" FontSize="12" />
+                                        </Button>
+                                        <Button
+                                            Command="{x:Bind RemoveCommand}"
+                                            Padding="8,4">
+                                            <FontIcon Glyph="&#xE711;" FontSize="12" />
+                                        </Button>
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                <Button x:Uid="Conversion_AddFiles" Command="{x:Bind ViewModel.AddFilesCommand}" />
+                <TextBlock
+                    x:Uid="Conversion_NeedMoreFiles"
+                    Visibility="{x:Bind ToVisibility(ViewModel.NeedMoreFiles), Mode=OneWay}"
+                    Opacity="0.8"
+                    TextWrapping="Wrap" />
+            </StackPanel>
+
+            <StackPanel Spacing="8" Visibility="{x:Bind ToVisibility(ViewModel.IsSplitTool), Mode=OneWay}">
+                <TextBlock x:Uid="Conversion_SplitMode" Style="{StaticResource SubtitleTextBlockStyle}" />
+                <RadioButton x:Uid="Conversion_SplitAll" IsChecked="{x:Bind ViewModel.SplitAllPages, Mode=TwoWay}" GroupName="SplitMode" />
+                <RadioButton x:Uid="Conversion_SplitRange" IsChecked="{x:Bind ViewModel.SplitByRange, Mode=TwoWay}" GroupName="SplitMode" />
+                <TextBox
+                    x:Uid="Conversion_PageRange"
+                    Text="{x:Bind ViewModel.PageRangeText, Mode=TwoWay}"
+                    IsEnabled="{x:Bind ViewModel.SplitByRange, Mode=OneWay}" />
+            </StackPanel>
+
+            <StackPanel Spacing="8" Visibility="{x:Bind ToVisibility(ViewModel.IsExtractTool), Mode=OneWay}">
+                <TextBlock x:Uid="Conversion_ExtractPages" Style="{StaticResource SubtitleTextBlockStyle}" />
+                <TextBox x:Uid="Conversion_PageRange" Text="{x:Bind ViewModel.PageRangeText, Mode=TwoWay}" />
+            </StackPanel>
+
+            <StackPanel Spacing="8" Visibility="{x:Bind ToVisibility(ViewModel.IsReorderTool), Mode=OneWay}">
+                <TextBlock x:Uid="Conversion_PageOrder" Style="{StaticResource SubtitleTextBlockStyle}" />
+                <TextBox x:Uid="Conversion_PageOrderBox" Text="{x:Bind ViewModel.PageOrderText, Mode=TwoWay}" />
+            </StackPanel>
+
+            <StackPanel Spacing="8" Visibility="{x:Bind ToVisibility(ViewModel.IsRotateTool), Mode=OneWay}">
+                <TextBlock x:Uid="Conversion_Rotate" Style="{StaticResource SubtitleTextBlockStyle}" />
+                <RadioButton x:Uid="Conversion_Rotate90" IsChecked="{x:Bind ViewModel.Rotate90, Mode=TwoWay}" GroupName="Rotate" />
+                <RadioButton x:Uid="Conversion_Rotate180" IsChecked="{x:Bind ViewModel.Rotate180, Mode=TwoWay}" GroupName="Rotate" />
+                <RadioButton x:Uid="Conversion_Rotate270" IsChecked="{x:Bind ViewModel.Rotate270, Mode=TwoWay}" GroupName="Rotate" />
+            </StackPanel>
+
+            <StackPanel Spacing="8" Visibility="{x:Bind ToVisibility(ViewModel.IsMetadataTool), Mode=OneWay}">
+                <TextBlock x:Uid="Conversion_Metadata" Style="{StaticResource SubtitleTextBlockStyle}" />
+                <TextBlock>
+                    <Run x:Uid="Conversion_MetadataTitle" />
+                    <Run Text="{x:Bind ViewModel.MetadataTitle, Mode=OneWay}" />
+                </TextBlock>
+                <TextBlock>
+                    <Run x:Uid="Conversion_MetadataAuthor" />
+                    <Run Text="{x:Bind ViewModel.MetadataAuthor, Mode=OneWay}" />
+                </TextBlock>
+                <TextBlock>
+                    <Run x:Uid="Conversion_MetadataSubject" />
+                    <Run Text="{x:Bind ViewModel.MetadataSubject, Mode=OneWay}" />
+                </TextBlock>
+                <TextBlock>
+                    <Run x:Uid="Conversion_MetadataCreator" />
+                    <Run Text="{x:Bind ViewModel.MetadataCreator, Mode=OneWay}" />
+                </TextBlock>
+                <TextBlock x:Uid="Conversion_MetadataHint" Opacity="0.75" TextWrapping="Wrap" />
+            </StackPanel>
+
+            <StackPanel Spacing="8" Visibility="{x:Bind ToVisibility(ViewModel.IsOfficeTool), Mode=OneWay}">
+                <TextBlock x:Uid="Conversion_OfficeEngine" Style="{StaticResource SubtitleTextBlockStyle}" />
+                <RadioButton x:Uid="Conversion_OfficeAuto" IsChecked="{x:Bind ViewModel.OfficeEngineAuto, Mode=TwoWay}" GroupName="OfficeEngine" />
+                <RadioButton x:Uid="Conversion_OfficeMicrosoft" IsChecked="{x:Bind ViewModel.OfficeEngineMicrosoft, Mode=TwoWay}" GroupName="OfficeEngine" />
+                <RadioButton x:Uid="Conversion_OfficeLibre" IsChecked="{x:Bind ViewModel.OfficeEngineLibre, Mode=TwoWay}" GroupName="OfficeEngine" />
+            </StackPanel>
+
+            <StackPanel Spacing="8">
+                <TextBlock x:Uid="Conversion_Output" Style="{StaticResource SubtitleTextBlockStyle}" />
+                <Grid ColumnSpacing="8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox Grid.Column="0" Text="{x:Bind ViewModel.OutputFolder, Mode=TwoWay}" IsReadOnly="True" />
+                    <Button Grid.Column="1" x:Uid="Conversion_Browse" Command="{x:Bind ViewModel.ChooseOutputFolderCommand}" />
+                </Grid>
+            </StackPanel>
+
+            <StackPanel Spacing="8" Visibility="{x:Bind ToVisibility(ViewModel.IsProcessing), Mode=OneWay}">
+                <ProgressBar Value="{x:Bind ViewModel.ProgressPercent, Mode=OneWay}" Maximum="100" />
+                <TextBlock Text="{x:Bind ViewModel.ProgressText, Mode=OneWay}" />
+                <Button x:Uid="Conversion_Cancel" Command="{x:Bind ViewModel.CancelCommand}" />
+            </StackPanel>
+
+            <InfoBar
+                IsOpen="{x:Bind ViewModel.HasError, Mode=OneWay}"
+                Severity="Error"
+                Title="{x:Bind ViewModel.ErrorTitle, Mode=OneWay}"
+                Message="{x:Bind ViewModel.ErrorHint, Mode=OneWay}"
+                IsClosable="False" />
+            <TextBlock
+                Text="{x:Bind ViewModel.ErrorDetail, Mode=OneWay}"
+                Opacity="0.7"
+                TextWrapping="Wrap"
+                Visibility="{x:Bind ToVisibility(ViewModel.HasError), Mode=OneWay}" />
+
+            <Button
+                x:Uid="Conversion_Convert"
+                Command="{x:Bind ViewModel.ConvertCommand}"
+                IsEnabled="{x:Bind ViewModel.CanConvert, Mode=OneWay}"
+                Style="{StaticResource AccentButtonStyle}"
+                HorizontalAlignment="Left"
+                Padding="28,12" />
+        </StackPanel>
+    </ScrollViewer>
+</Page>

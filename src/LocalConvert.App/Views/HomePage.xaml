@@ -1,0 +1,109 @@
+<Page
+    x:Class="LocalConvert.App.Views.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ScrollViewer>
+        <StackPanel
+            MaxWidth="{StaticResource ContentMaxWidth}"
+            Padding="40,24,40,48"
+            Spacing="28"
+            HorizontalAlignment="Stretch">
+
+            <StackPanel Spacing="8">
+                <TextBlock x:Uid="Home_Title" Style="{StaticResource TitleTextBlockStyle}" />
+                <Border
+                    HorizontalAlignment="Left"
+                    Background="{ThemeResource SubtleFillColorSecondaryBrush}"
+                    CornerRadius="8"
+                    Padding="10,4">
+                    <TextBlock
+                        x:Uid="Home_PrivacyBadge"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Opacity="0.85" />
+                </Border>
+                <TextBlock
+                    x:Uid="Home_Subtitle"
+                    Style="{StaticResource BodyTextBlockStyle}"
+                    TextWrapping="Wrap"
+                    Opacity="0.9" />
+            </StackPanel>
+
+            <Border
+                AllowDrop="True"
+                DragOver="OnDragOver"
+                Drop="OnDrop"
+                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                BorderBrush="{ThemeResource ControlStrokeColorDefaultBrush}"
+                BorderThickness="1"
+                CornerRadius="16"
+                Padding="36"
+                MinHeight="200"
+                AutomationProperties.Name="Drop zone">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="14">
+                    <FontIcon Glyph="&#xE8B5;" FontSize="28" Opacity="0.85" />
+                    <TextBlock
+                        x:Uid="Home_DropHint"
+                        Style="{StaticResource SubtitleTextBlockStyle}"
+                        HorizontalAlignment="Center"
+                        TextAlignment="Center"
+                        TextWrapping="Wrap" />
+                    <TextBlock
+                        x:Uid="Home_DropSupport"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Opacity="0.7"
+                        HorizontalAlignment="Center"
+                        TextAlignment="Center"
+                        TextWrapping="Wrap" />
+                    <Button
+                        x:Uid="Home_ChooseFiles"
+                        Command="{x:Bind ViewModel.ChooseFilesCommand}"
+                        HorizontalAlignment="Center"
+                        Style="{StaticResource AccentButtonStyle}"
+                        Padding="20,8" />
+                </StackPanel>
+            </Border>
+
+            <InfoBar
+                IsOpen="{x:Bind ViewModel.HasUnsupportedFiles, Mode=OneWay}"
+                Severity="Informational"
+                IsClosable="False"
+                x:Uid="Home_Unsupported" />
+
+            <StackPanel Spacing="12" Visibility="{x:Bind ToVisibility(ViewModel.HasSuggestions), Mode=OneWay}">
+                <TextBlock x:Uid="Home_Suggested" Style="{StaticResource SubtitleTextBlockStyle}" />
+                <ItemsRepeater ItemsSource="{x:Bind ViewModel.SuggestedTools}" ItemTemplate="{StaticResource ToolCardTemplate}">
+                    <ItemsRepeater.Layout>
+                        <UniformGridLayout MinItemWidth="260" MinItemHeight="96" MinColumnSpacing="12" MinRowSpacing="12" />
+                    </ItemsRepeater.Layout>
+                </ItemsRepeater>
+            </StackPanel>
+
+            <StackPanel Spacing="12">
+                <TextBlock x:Uid="Home_PdfTools" Style="{StaticResource SubtitleTextBlockStyle}" />
+                <ItemsRepeater ItemsSource="{x:Bind ViewModel.PdfTools}" ItemTemplate="{StaticResource ToolCardTemplate}">
+                    <ItemsRepeater.Layout>
+                        <UniformGridLayout MinItemWidth="260" MinItemHeight="96" MinColumnSpacing="12" MinRowSpacing="12" />
+                    </ItemsRepeater.Layout>
+                </ItemsRepeater>
+            </StackPanel>
+
+            <StackPanel Spacing="12">
+                <TextBlock x:Uid="Home_ConvertTools" Style="{StaticResource SubtitleTextBlockStyle}" />
+                <ItemsRepeater ItemsSource="{x:Bind ViewModel.ConvertTools}" ItemTemplate="{StaticResource ToolCardTemplate}">
+                    <ItemsRepeater.Layout>
+                        <UniformGridLayout MinItemWidth="260" MinItemHeight="96" MinColumnSpacing="12" MinRowSpacing="12" />
+                    </ItemsRepeater.Layout>
+                </ItemsRepeater>
+            </StackPanel>
+
+            <StackPanel Spacing="12">
+                <TextBlock x:Uid="Home_ImageTools" Style="{StaticResource SubtitleTextBlockStyle}" />
+                <ItemsRepeater ItemsSource="{x:Bind ViewModel.ImageTools}" ItemTemplate="{StaticResource ToolCardTemplate}">
+                    <ItemsRepeater.Layout>
+                        <UniformGridLayout MinItemWidth="260" MinItemHeight="96" MinColumnSpacing="12" MinRowSpacing="12" />
+                    </ItemsRepeater.Layout>
+                </ItemsRepeater>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

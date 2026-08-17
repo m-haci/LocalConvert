@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="App_Title.Text" xml:space="preserve"><value>LocalConvert</value></data>
+  <data name="Nav_Home.Content" xml:space="preserve"><value>Home</value></data>
+  <data name="Nav_Convert.Content" xml:space="preserve"><value>Convert</value></data>
+  <data name="Nav_PdfTools.Content" xml:space="preserve"><value>PDF tools</value></data>
+  <data name="Nav_Images.Content" xml:space="preserve"><value>Images</value></data>
+  <data name="Home_Title.Text" xml:space="preserve"><value>LocalConvert</value></data>
+  <data name="Home_PrivacyBadge.Text" xml:space="preserve"><value>100% offline</value></data>
+  <data name="Home_Subtitle.Text" xml:space="preserve"><value>Your files never leave this computer. No upload, no account, no cloud.</value></data>
+  <data name="Home_DropHint.Text" xml:space="preserve"><value>Drop files here</value></data>
+  <data name="Home_DropSupport.Text" xml:space="preserve"><value>PDF, Word, PowerPoint, Excel, JPG, and PNG</value></data>
+  <data name="Home_ChooseFiles.Content" xml:space="preserve"><value>Choose files</value></data>
+  <data name="Home_Suggested.Text" xml:space="preserve"><value>Suggested actions</value></data>
+  <data name="Home_PdfTools.Text" xml:space="preserve"><value>PDF tools</value></data>
+  <data name="Home_ConvertTools.Text" xml:space="preserve"><value>Convert</value></data>
+  <data name="Home_ImageTools.Text" xml:space="preserve"><value>Images</value></data>
+  <data name="Home_Unsupported.Title" xml:space="preserve"><value>No tool for this file type</value></data>
+  <data name="Home_Unsupported.Message" xml:space="preserve"><value>Choose a PDF, Office document, or JPG/PNG file.</value></data>
+  <data name="Convert_Title.Text" xml:space="preserve"><value>Convert</value></data>
+  <data name="Convert_Subtitle.Text" xml:space="preserve"><value>Turn Office documents and images into PDF, or PDF pages into images.</value></data>
+  <data name="PdfTools_Title.Text" xml:space="preserve"><value>PDF tools</value></data>
+  <data name="PdfTools_Subtitle.Text" xml:space="preserve"><value>Merge, split, rotate, extract, or reorder PDF pages.</value></data>
+  <data name="Images_Title.Text" xml:space="preserve"><value>Images</value></data>
+  <data name="Images_Subtitle.Text" xml:space="preserve"><value>Convert JPG and PNG files to PDF, or PDF pages to images.</value></data>
+  <data name="Tool_ImageToPdf" xml:space="preserve"><value>Image → PDF</value></data>
+  <data name="Tool_ImageToPdf_Desc" xml:space="preserve"><value>Create one PDF from JPG and PNG files.</value></data>
+  <data name="Tool_PdfMerge" xml:space="preserve"><value>Merge PDF</value></data>
+  <data name="Tool_PdfMerge_Desc" xml:space="preserve"><value>Combine several PDFs into a single file.</value></data>
+  <data name="Tool_PdfSplit" xml:space="preserve"><value>Split PDF</value></data>
+  <data name="Tool_PdfSplit_Desc" xml:space="preserve"><value>Save every page or a page range as separate PDFs.</value></data>
+  <data name="Tool_PdfExtract" xml:space="preserve"><value>Extract pages</value></data>
+  <data name="Tool_PdfExtract_Desc" xml:space="preserve"><value>Create a new PDF from selected pages.</value></data>
+  <data name="Tool_PdfRotate" xml:space="preserve"><value>Rotate PDF</value></data>
+  <data name="Tool_PdfRotate_Desc" xml:space="preserve"><value>Rotate pages by 90, 180, or 270 degrees.</value></data>
+  <data name="Tool_PdfReorder" xml:space="preserve"><value>Reorder pages</value></data>
+  <data name="Tool_PdfReorder_Desc" xml:space="preserve"><value>Arrange pages in a new order.</value></data>
+  <data name="Tool_PdfMetadata" xml:space="preserve"><value>PDF info</value></data>
+  <data name="Tool_PdfMetadata_Desc" xml:space="preserve"><value>View title and author, then save a cleaned copy.</value></data>
+  <data name="Tool_PdfToJpeg" xml:space="preserve"><value>PDF → JPG</value></data>
+  <data name="Tool_PdfToJpeg_Desc" xml:space="preserve"><value>Turn each PDF page into a JPG image.</value></data>
+  <data name="Tool_PdfToPng" xml:space="preserve"><value>PDF → PNG</value></data>
+  <data name="Tool_PdfToPng_Desc" xml:space="preserve"><value>Turn each PDF page into a PNG image.</value></data>
+  <data name="Tool_WordToPdf" xml:space="preserve"><value>Word → PDF</value></data>
+  <data name="Tool_WordToPdf_Desc" xml:space="preserve"><value>Convert DOC and DOCX files to PDF.</value></data>
+  <data name="Tool_PowerPointToPdf" xml:space="preserve"><value>PowerPoint → PDF</value></data>
+  <data name="Tool_PowerPointToPdf_Desc" xml:space="preserve"><value>Convert PPT and PPTX slideshows to PDF.</value></data>
+  <data name="Tool_ExcelToPdf" xml:space="preserve"><value>Excel → PDF</value></data>
+  <data name="Tool_ExcelToPdf_Desc" xml:space="preserve"><value>Convert XLS and XLSX spreadsheets to PDF.</value></data>
+  <data name="Conversion_Files.Text" xml:space="preserve"><value>Files</value></data>
+  <data name="Conversion_FileCount" xml:space="preserve"><value>{0} files</value></data>
+  <data name="Conversion_AddFiles.Content" xml:space="preserve"><value>Add files</value></data>
+  <data name="Conversion_DropHint.Text" xml:space="preserve"><value>Drop files here or choose them</value></data>
+  <data name="Conversion_NeedMoreFiles.Text" xml:space="preserve"><value>Select at least two PDFs to merge.</value></data>
+  <data name="Conversion_SplitMode.Text" xml:space="preserve"><value>Split mode</value></data>
+  <data name="Conversion_SplitAll.Content" xml:space="preserve"><value>Every page as a separate PDF</value></data>
+  <data name="Conversion_SplitRange.Content" xml:space="preserve"><value>Page range</value></data>
+  <data name="Conversion_PageRange.Header" xml:space="preserve"><value>Pages</value></data>
+  <data name="Conversion_PageRange.PlaceholderText" xml:space="preserve"><value>1-5,8,12</value></data>
+  <data name="Conversion_ExtractPages.Text" xml:space="preserve"><value>Pages to extract</value></data>
+  <data name="Conversion_PageOrder.Text" xml:space="preserve"><value>New page order</value></data>
+  <data name="Conversion_PageOrderBox.Header" xml:space="preserve"><value>Order</value></data>
+  <data name="Conversion_PageOrderBox.PlaceholderText" xml:space="preserve"><value>3,1,2,4</value></data>
+  <data name="Conversion_Rotate.Text" xml:space="preserve"><value>Rotation</value></data>
+  <data name="Conversion_Rotate90.Content" xml:space="preserve"><value>90°</value></data>
+  <data name="Conversion_Rotate180.Content" xml:space="preserve"><value>180°</value></data>
+  <data name="Conversion_Rotate270.Content" xml:space="preserve"><value>270°</value></data>
+  <data name="Conversion_Metadata.Text" xml:space="preserve"><value>Document info</value></data>
+  <data name="Conversion_MetadataTitle.Text" xml:space="preserve"><value>Title: </value></data>
+  <data name="Conversion_MetadataAuthor.Text" xml:space="preserve"><value>Author: </value></data>
+  <data name="Conversion_MetadataSubject.Text" xml:space="preserve"><value>Subject: </value></data>
+  <data name="Conversion_MetadataCreator.Text" xml:space="preserve"><value>Creator: </value></data>
+  <data name="Conversion_MetadataHint.Text" xml:space="preserve"><value>Convert saves a new PDF with this information cleared.</value></data>
+  <data name="Conversion_OfficeEngine.Text" xml:space="preserve"><value>Conversion engine</value></data>
+  <data name="Conversion_OfficeAuto.Content" xml:space="preserve"><value>Automatic</value></data>
+  <data name="Conversion_OfficeMicrosoft.Content" xml:space="preserve"><value>Microsoft Office</value></data>
+  <data name="Conversion_OfficeLibre.Content" xml:space="preserve"><value>LibreOffice</value></data>
+  <data name="Conversion_OfficeMissing.Title" xml:space="preserve"><value>Office was not found</value></data>
+  <data name="Conversion_OfficeMissing.Message" xml:space="preserve"><value>Word, PowerPoint, or Excel conversion needs Microsoft Office or LibreOffice.</value></data>
+  <data name="Conversion_Output.Text" xml:space="preserve"><value>Output folder</value></data>
+  <data name="Conversion_Browse.Content" xml:space="preserve"><value>Browse</value></data>
+  <data name="Conversion_Cancel.Content" xml:space="preserve"><value>Cancel</value></data>
+  <data name="Conversion_Convert.Content" xml:space="preserve"><value>Convert</value></data>
+  <data name="Completed_Title.Text" xml:space="preserve"><value>Conversion complete</value></data>
+  <data name="Completed_OpenFile.Content" xml:space="preserve"><value>Open file</value></data>
+  <data name="Completed_OpenFolder.Content" xml:space="preserve"><value>Open folder</value></data>
+  <data name="Completed_ConvertAnother.Content" xml:space="preserve"><value>Convert another</value></data>
+  <data name="Completed_DurationFormat" xml:space="preserve"><value>Completed in {0:0.0} seconds</value></data>
+  <data name="Settings_Title.Text" xml:space="preserve"><value>Settings</value></data>
+  <data name="Settings_General.Text" xml:space="preserve"><value>General</value></data>
+  <data name="Settings_OutputFolder.Text" xml:space="preserve"><value>Output folder</value></data>
+  <data name="Settings_SameFolder.Content" xml:space="preserve"><value>Same folder as source</value></data>
+  <data name="Settings_CustomFolder.Content" xml:space="preserve"><value>Custom folder</value></data>
+  <data name="Settings_Browse.Content" xml:space="preserve"><value>Browse</value></data>
+  <data name="Settings_ExistingFile.Text" xml:space="preserve"><value>If the file already exists</value></data>
+  <data name="Settings_CreateNewName.Content" xml:space="preserve"><value>Create a new name</value></data>
+  <data name="Settings_Ask.Content" xml:space="preserve"><value>Ask</value></data>
+  <data name="Settings_Overwrite.Content" xml:space="preserve"><value>Overwrite</value></data>
+  <data name="Settings_Language.Text" xml:space="preserve"><value>Language</value></data>
+  <data name="Settings_Turkish.Content" xml:space="preserve"><value>Türkçe</value></data>
+  <data name="Settings_English.Content" xml:space="preserve"><value>English</value></data>
+  <data name="Settings_Privacy.Text" xml:space="preserve"><value>Privacy</value></data>
+  <data name="Settings_PrivacyLocal.Text" xml:space="preserve"><value>Files are processed only on this computer.</value></data>
+  <data name="Settings_PrivacyCloud.Text" xml:space="preserve"><value>Cloud upload: Disabled</value></data>
+  <data name="Settings_OfficeEngine.Text" xml:space="preserve"><value>Office conversion engine</value></data>
+  <data name="Settings_OfficeAuto.Content" xml:space="preserve"><value>Automatic (Microsoft Office first)</value></data>
+  <data name="Settings_OfficeMicrosoft.Content" xml:space="preserve"><value>Microsoft Office</value></data>
+  <data name="Settings_OfficeLibre.Content" xml:space="preserve"><value>LibreOffice</value></data>
+  <data name="Completed_FileCount" xml:space="preserve"><value>{0} files created</value></data>
+  <data name="Progress_Starting" xml:space="preserve"><value>Starting…</value></data>
+  <data name="Progress_Percent" xml:space="preserve"><value>{0}%</value></data>
+  <data name="Progress_Pages" xml:space="preserve"><value>{0}%  ·  {1} / {2} pages</value></data>
+  <data name="AskOverwrite_Title" xml:space="preserve"><value>File already exists</value></data>
+  <data name="AskOverwrite_Body" xml:space="preserve"><value>A file with this name already exists. What would you like to do?</value></data>
+  <data name="AskOverwrite_NewName" xml:space="preserve"><value>Create a new name</value></data>
+  <data name="AskOverwrite_Overwrite" xml:space="preserve"><value>Overwrite</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Cancel</value></data>
+  <data name="Error_FileNotFound" xml:space="preserve"><value>The file could not be found.</value></data>
+  <data name="Error_FileNotFound_Hint" xml:space="preserve"><value>It may have been moved or deleted.</value></data>
+  <data name="Error_FileEncrypted" xml:space="preserve"><value>The PDF is password protected.</value></data>
+  <data name="Error_FileEncrypted_Hint" xml:space="preserve"><value>Encrypted PDFs are not supported in this version.</value></data>
+  <data name="Error_FileCorrupt" xml:space="preserve"><value>The file could not be converted.</value></data>
+  <data name="Error_FileCorrupt_Hint" xml:space="preserve"><value>The file may be damaged or unreadable.</value></data>
+  <data name="Error_UnsupportedFormat" xml:space="preserve"><value>This file type is not supported.</value></data>
+  <data name="Error_UnsupportedFormat_Hint" xml:space="preserve"><value>Choose a JPG, PNG, PDF, or Office file.</value></data>
+  <data name="Error_InvalidPageRange" xml:space="preserve"><value>The page range is invalid.</value></data>
+  <data name="Error_InvalidPageRange_Hint" xml:space="preserve"><value>Example: 1-5 or 1,3,7</value></data>
+  <data name="Error_Cancelled" xml:space="preserve"><value>The operation was cancelled.</value></data>
+  <data name="Error_Cancelled_Hint" xml:space="preserve"><value>Conversion was stopped.</value></data>
+  <data name="Error_OutputWriteFailed" xml:space="preserve"><value>The output file could not be written.</value></data>
+  <data name="Error_OutputWriteFailed_Hint" xml:space="preserve"><value>Check folder permissions.</value></data>
+  <data name="Error_TemporaryFileFailed" xml:space="preserve"><value>A temporary file could not be created.</value></data>
+  <data name="Error_TemporaryFileFailed_Hint" xml:space="preserve"><value>There may be a disk space or permission problem.</value></data>
+  <data name="Error_ConverterNotFound" xml:space="preserve"><value>The converter was not found.</value></data>
+  <data name="Error_ConverterNotFound_Hint" xml:space="preserve"><value>This action is not available in this version.</value></data>
+  <data name="Error_InvalidInput" xml:space="preserve"><value>The input files are not valid for this tool.</value></data>
+  <data name="Error_InvalidInput_Hint" xml:space="preserve"><value>Choose the correct file types and try again.</value></data>
+  <data name="Error_Unknown" xml:space="preserve"><value>An unexpected error occurred.</value></data>
+  <data name="Error_Unknown_Hint" xml:space="preserve"><value>Details were written to the developer log.</value></data>
+  <data name="Error_OfficeEngineMissing" xml:space="preserve"><value>Office or LibreOffice was not found.</value></data>
+  <data name="Error_OfficeEngineMissing_Hint" xml:space="preserve"><value>Word, PowerPoint, and Excel conversion needs Microsoft Office or LibreOffice.</value></data>
+</root>

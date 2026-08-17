@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>LocalConvert.Core</RootNamespace>
+    <AssemblyName>LocalConvert.Core</AssemblyName>
+    <Description>Conversion abstractions, job model, and shared domain types.</Description>
+  </PropertyGroup>
+</Project>

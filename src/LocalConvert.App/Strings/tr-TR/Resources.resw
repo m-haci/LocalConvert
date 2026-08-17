@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="App_Title.Text" xml:space="preserve"><value>LocalConvert</value></data>
+  <data name="Nav_Home.Content" xml:space="preserve"><value>Ana sayfa</value></data>
+  <data name="Nav_Convert.Content" xml:space="preserve"><value>Dönüştür</value></data>
+  <data name="Nav_PdfTools.Content" xml:space="preserve"><value>PDF araçları</value></data>
+  <data name="Nav_Images.Content" xml:space="preserve"><value>Görseller</value></data>
+  <data name="Home_Title.Text" xml:space="preserve"><value>LocalConvert</value></data>
+  <data name="Home_PrivacyBadge.Text" xml:space="preserve"><value>%100 çevrimdışı</value></data>
+  <data name="Home_Subtitle.Text" xml:space="preserve"><value>Dosyalarınız bilgisayarınızdan asla çıkmaz. Yükleme yok, hesap yok, bulut yok.</value></data>
+  <data name="Home_DropHint.Text" xml:space="preserve"><value>Dosyaları buraya sürükleyin</value></data>
+  <data name="Home_DropSupport.Text" xml:space="preserve"><value>PDF, Word, PowerPoint, Excel, JPG ve PNG</value></data>
+  <data name="Home_ChooseFiles.Content" xml:space="preserve"><value>Dosya seç</value></data>
+  <data name="Home_Suggested.Text" xml:space="preserve"><value>Önerilen işlemler</value></data>
+  <data name="Home_PdfTools.Text" xml:space="preserve"><value>PDF araçları</value></data>
+  <data name="Home_ConvertTools.Text" xml:space="preserve"><value>Dönüştür</value></data>
+  <data name="Home_ImageTools.Text" xml:space="preserve"><value>Görseller</value></data>
+  <data name="Home_Unsupported.Title" xml:space="preserve"><value>Bu dosya türü için araç yok</value></data>
+  <data name="Home_Unsupported.Message" xml:space="preserve"><value>PDF, Office belgesi veya JPG/PNG seçin.</value></data>
+  <data name="Convert_Title.Text" xml:space="preserve"><value>Dönüştür</value></data>
+  <data name="Convert_Subtitle.Text" xml:space="preserve"><value>Office belgelerini ve görselleri PDF’e çevirin. PDF sayfalarını görsele dönüştürün.</value></data>
+  <data name="PdfTools_Title.Text" xml:space="preserve"><value>PDF araçları</value></data>
+  <data name="PdfTools_Subtitle.Text" xml:space="preserve"><value>Birleştirin, bölün, döndürün, sayfa çıkarın veya sırayı değiştirin.</value></data>
+  <data name="Images_Title.Text" xml:space="preserve"><value>Görseller</value></data>
+  <data name="Images_Subtitle.Text" xml:space="preserve"><value>JPG ve PNG dosyalarını PDF’e, PDF sayfalarını görsele dönüştürün.</value></data>
+  <data name="Tool_ImageToPdf" xml:space="preserve"><value>Görsel → PDF</value></data>
+  <data name="Tool_ImageToPdf_Desc" xml:space="preserve"><value>JPG ve PNG dosyalarından tek bir PDF oluşturun.</value></data>
+  <data name="Tool_PdfMerge" xml:space="preserve"><value>PDF birleştir</value></data>
+  <data name="Tool_PdfMerge_Desc" xml:space="preserve"><value>Birden fazla PDF’i tek dosyada birleştirin.</value></data>
+  <data name="Tool_PdfSplit" xml:space="preserve"><value>PDF böl</value></data>
+  <data name="Tool_PdfSplit_Desc" xml:space="preserve"><value>Her sayfayı veya bir aralığı ayrı PDF olarak kaydedin.</value></data>
+  <data name="Tool_PdfExtract" xml:space="preserve"><value>Sayfa çıkar</value></data>
+  <data name="Tool_PdfExtract_Desc" xml:space="preserve"><value>Seçilen sayfalardan yeni bir PDF oluşturun.</value></data>
+  <data name="Tool_PdfRotate" xml:space="preserve"><value>PDF döndür</value></data>
+  <data name="Tool_PdfRotate_Desc" xml:space="preserve"><value>Sayfaları 90, 180 veya 270 derece döndürün.</value></data>
+  <data name="Tool_PdfReorder" xml:space="preserve"><value>Sayfa sırası</value></data>
+  <data name="Tool_PdfReorder_Desc" xml:space="preserve"><value>Sayfaları istediğiniz sırayla yeniden düzenleyin.</value></data>
+  <data name="Tool_PdfMetadata" xml:space="preserve"><value>PDF bilgileri</value></data>
+  <data name="Tool_PdfMetadata_Desc" xml:space="preserve"><value>Başlık ve yazar gibi bilgileri görün ve temizleyin.</value></data>
+  <data name="Tool_PdfToJpeg" xml:space="preserve"><value>PDF → JPG</value></data>
+  <data name="Tool_PdfToJpeg_Desc" xml:space="preserve"><value>Her PDF sayfasını JPG görsele çevirin.</value></data>
+  <data name="Tool_PdfToPng" xml:space="preserve"><value>PDF → PNG</value></data>
+  <data name="Tool_PdfToPng_Desc" xml:space="preserve"><value>Her PDF sayfasını PNG görsele çevirin.</value></data>
+  <data name="Tool_WordToPdf" xml:space="preserve"><value>Word → PDF</value></data>
+  <data name="Tool_WordToPdf_Desc" xml:space="preserve"><value>DOC ve DOCX dosyalarını PDF’e dönüştürün.</value></data>
+  <data name="Tool_PowerPointToPdf" xml:space="preserve"><value>PowerPoint → PDF</value></data>
+  <data name="Tool_PowerPointToPdf_Desc" xml:space="preserve"><value>PPT ve PPTX sunularını PDF’e dönüştürün.</value></data>
+  <data name="Tool_ExcelToPdf" xml:space="preserve"><value>Excel → PDF</value></data>
+  <data name="Tool_ExcelToPdf_Desc" xml:space="preserve"><value>XLS ve XLSX tablolarını PDF’e dönüştürün.</value></data>
+  <data name="Conversion_Files.Text" xml:space="preserve"><value>Dosyalar</value></data>
+  <data name="Conversion_FileCount" xml:space="preserve"><value>{0} dosya</value></data>
+  <data name="Conversion_AddFiles.Content" xml:space="preserve"><value>Dosya ekle</value></data>
+  <data name="Conversion_DropHint.Text" xml:space="preserve"><value>Dosyaları buraya sürükleyin veya seçin</value></data>
+  <data name="Conversion_NeedMoreFiles.Text" xml:space="preserve"><value>Birleştirmek için en az iki PDF seçin.</value></data>
+  <data name="Conversion_SplitMode.Text" xml:space="preserve"><value>Bölme biçimi</value></data>
+  <data name="Conversion_SplitAll.Content" xml:space="preserve"><value>Her sayfayı ayrı PDF</value></data>
+  <data name="Conversion_SplitRange.Content" xml:space="preserve"><value>Sayfa aralığı</value></data>
+  <data name="Conversion_PageRange.Header" xml:space="preserve"><value>Sayfalar</value></data>
+  <data name="Conversion_PageRange.PlaceholderText" xml:space="preserve"><value>1-5,8,12</value></data>
+  <data name="Conversion_ExtractPages.Text" xml:space="preserve"><value>Çıkarılacak sayfalar</value></data>
+  <data name="Conversion_PageOrder.Text" xml:space="preserve"><value>Yeni sayfa sırası</value></data>
+  <data name="Conversion_PageOrderBox.Header" xml:space="preserve"><value>Sıra</value></data>
+  <data name="Conversion_PageOrderBox.PlaceholderText" xml:space="preserve"><value>3,1,2,4</value></data>
+  <data name="Conversion_Rotate.Text" xml:space="preserve"><value>Döndürme</value></data>
+  <data name="Conversion_Rotate90.Content" xml:space="preserve"><value>90°</value></data>
+  <data name="Conversion_Rotate180.Content" xml:space="preserve"><value>180°</value></data>
+  <data name="Conversion_Rotate270.Content" xml:space="preserve"><value>270°</value></data>
+  <data name="Conversion_Metadata.Text" xml:space="preserve"><value>Belge bilgileri</value></data>
+  <data name="Conversion_MetadataTitle.Text" xml:space="preserve"><value>Başlık: </value></data>
+  <data name="Conversion_MetadataAuthor.Text" xml:space="preserve"><value>Yazar: </value></data>
+  <data name="Conversion_MetadataSubject.Text" xml:space="preserve"><value>Konu: </value></data>
+  <data name="Conversion_MetadataCreator.Text" xml:space="preserve"><value>Oluşturan: </value></data>
+  <data name="Conversion_MetadataHint.Text" xml:space="preserve"><value>Dönüştür’e basınca bu bilgiler temizlenmiş yeni bir PDF kaydedilir.</value></data>
+  <data name="Conversion_OfficeEngine.Text" xml:space="preserve"><value>Dönüştürme motoru</value></data>
+  <data name="Conversion_OfficeAuto.Content" xml:space="preserve"><value>Otomatik</value></data>
+  <data name="Conversion_OfficeMicrosoft.Content" xml:space="preserve"><value>Microsoft Office</value></data>
+  <data name="Conversion_OfficeLibre.Content" xml:space="preserve"><value>LibreOffice</value></data>
+  <data name="Conversion_OfficeMissing.Title" xml:space="preserve"><value>Office bulunamadı</value></data>
+  <data name="Conversion_OfficeMissing.Message" xml:space="preserve"><value>Word, PowerPoint veya Excel dosyaları için Microsoft Office ya da LibreOffice gerekir.</value></data>
+  <data name="Conversion_Output.Text" xml:space="preserve"><value>Çıktı klasörü</value></data>
+  <data name="Conversion_Browse.Content" xml:space="preserve"><value>Göz at</value></data>
+  <data name="Conversion_Cancel.Content" xml:space="preserve"><value>İptal et</value></data>
+  <data name="Conversion_Convert.Content" xml:space="preserve"><value>Dönüştür</value></data>
+  <data name="Completed_Title.Text" xml:space="preserve"><value>Dönüştürme tamamlandı</value></data>
+  <data name="Completed_OpenFile.Content" xml:space="preserve"><value>Dosyayı aç</value></data>
+  <data name="Completed_OpenFolder.Content" xml:space="preserve"><value>Klasörü aç</value></data>
+  <data name="Completed_ConvertAnother.Content" xml:space="preserve"><value>Başka dönüştür</value></data>
+  <data name="Completed_DurationFormat" xml:space="preserve"><value>{0:0.0} saniyede tamamlandı</value></data>
+  <data name="Settings_Title.Text" xml:space="preserve"><value>Ayarlar</value></data>
+  <data name="Settings_General.Text" xml:space="preserve"><value>Genel</value></data>
+  <data name="Settings_OutputFolder.Text" xml:space="preserve"><value>Çıktı klasörü</value></data>
+  <data name="Settings_SameFolder.Content" xml:space="preserve"><value>Kaynak dosyayla aynı klasör</value></data>
+  <data name="Settings_CustomFolder.Content" xml:space="preserve"><value>Özel klasör</value></data>
+  <data name="Settings_Browse.Content" xml:space="preserve"><value>Göz at</value></data>
+  <data name="Settings_ExistingFile.Text" xml:space="preserve"><value>Dosya zaten varsa</value></data>
+  <data name="Settings_CreateNewName.Content" xml:space="preserve"><value>Yeni ad oluştur</value></data>
+  <data name="Settings_Ask.Content" xml:space="preserve"><value>Sor</value></data>
+  <data name="Settings_Overwrite.Content" xml:space="preserve"><value>Üzerine yaz</value></data>
+  <data name="Settings_Language.Text" xml:space="preserve"><value>Dil</value></data>
+  <data name="Settings_Turkish.Content" xml:space="preserve"><value>Türkçe</value></data>
+  <data name="Settings_English.Content" xml:space="preserve"><value>English</value></data>
+  <data name="Settings_Privacy.Text" xml:space="preserve"><value>Gizlilik</value></data>
+  <data name="Settings_PrivacyLocal.Text" xml:space="preserve"><value>Dosyalar yalnızca bu bilgisayarda işlenir.</value></data>
+  <data name="Settings_PrivacyCloud.Text" xml:space="preserve"><value>Bulut yükleme: Kapalı</value></data>
+  <data name="Settings_OfficeEngine.Text" xml:space="preserve"><value>Office dönüştürme motoru</value></data>
+  <data name="Settings_OfficeAuto.Content" xml:space="preserve"><value>Otomatik (önce Microsoft Office)</value></data>
+  <data name="Settings_OfficeMicrosoft.Content" xml:space="preserve"><value>Microsoft Office</value></data>
+  <data name="Settings_OfficeLibre.Content" xml:space="preserve"><value>LibreOffice</value></data>
+  <data name="Completed_FileCount" xml:space="preserve"><value>{0} dosya oluşturuldu</value></data>
+  <data name="Progress_Starting" xml:space="preserve"><value>Başlatılıyor…</value></data>
+  <data name="Progress_Percent" xml:space="preserve"><value>%{0}</value></data>
+  <data name="Progress_Pages" xml:space="preserve"><value>%{0}  ·  {1} / {2} sayfa</value></data>
+  <data name="AskOverwrite_Title" xml:space="preserve"><value>Dosya zaten var</value></data>
+  <data name="AskOverwrite_Body" xml:space="preserve"><value>Aynı adda bir dosya mevcut. Ne yapmak istersiniz?</value></data>
+  <data name="AskOverwrite_NewName" xml:space="preserve"><value>Yeni ad oluştur</value></data>
+  <data name="AskOverwrite_Overwrite" xml:space="preserve"><value>Üzerine yaz</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Vazgeç</value></data>
+  <data name="Error_FileNotFound" xml:space="preserve"><value>Dosya bulunamadı.</value></data>
+  <data name="Error_FileNotFound_Hint" xml:space="preserve"><value>Dosya taşınmış veya silinmiş olabilir.</value></data>
+  <data name="Error_FileEncrypted" xml:space="preserve"><value>PDF parolayla korunuyor.</value></data>
+  <data name="Error_FileEncrypted_Hint" xml:space="preserve"><value>Şifreli PDF dosyaları bu sürümde açılamaz.</value></data>
+  <data name="Error_FileCorrupt" xml:space="preserve"><value>Dosya dönüştürülemedi.</value></data>
+  <data name="Error_FileCorrupt_Hint" xml:space="preserve"><value>Dosya bozuk olabilir veya açılamıyor.</value></data>
+  <data name="Error_UnsupportedFormat" xml:space="preserve"><value>Bu dosya türü desteklenmiyor.</value></data>
+  <data name="Error_UnsupportedFormat_Hint" xml:space="preserve"><value>JPG, PNG, PDF veya Office belgesi seçin.</value></data>
+  <data name="Error_InvalidPageRange" xml:space="preserve"><value>Sayfa aralığı geçersiz.</value></data>
+  <data name="Error_InvalidPageRange_Hint" xml:space="preserve"><value>Örnek: 1-5 veya 1,3,7</value></data>
+  <data name="Error_Cancelled" xml:space="preserve"><value>İşlem iptal edildi.</value></data>
+  <data name="Error_Cancelled_Hint" xml:space="preserve"><value>Dönüştürme kullanıcı tarafından durduruldu.</value></data>
+  <data name="Error_OutputWriteFailed" xml:space="preserve"><value>Çıktı dosyası yazılamadı.</value></data>
+  <data name="Error_OutputWriteFailed_Hint" xml:space="preserve"><value>Klasör izinlerini kontrol edin.</value></data>
+  <data name="Error_TemporaryFileFailed" xml:space="preserve"><value>Geçici dosya oluşturulamadı.</value></data>
+  <data name="Error_TemporaryFileFailed_Hint" xml:space="preserve"><value>Disk alanı veya izin sorunu olabilir.</value></data>
+  <data name="Error_ConverterNotFound" xml:space="preserve"><value>Dönüştürücü bulunamadı.</value></data>
+  <data name="Error_ConverterNotFound_Hint" xml:space="preserve"><value>Bu işlem bu sürümde kullanılamıyor.</value></data>
+  <data name="Error_InvalidInput" xml:space="preserve"><value>Girdi dosyaları uygun değil.</value></data>
+  <data name="Error_InvalidInput_Hint" xml:space="preserve"><value>Doğru dosya türlerini seçip tekrar deneyin.</value></data>
+  <data name="Error_Unknown" xml:space="preserve"><value>Beklenmeyen bir hata oluştu.</value></data>
+  <data name="Error_Unknown_Hint" xml:space="preserve"><value>Ayrıntılar geliştirici günlüğüne kaydedildi.</value></data>
+  <data name="Error_OfficeEngineMissing" xml:space="preserve"><value>Office veya LibreOffice bulunamadı.</value></data>
+  <data name="Error_OfficeEngineMissing_Hint" xml:space="preserve"><value>Word, PowerPoint ve Excel dönüştürmesi için Microsoft Office veya LibreOffice gerekir.</value></data>
+</root>

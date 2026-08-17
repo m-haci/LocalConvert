@@ -1,0 +1,51 @@
+<Page
+    x:Class="LocalConvert.App.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ScrollViewer>
+        <StackPanel MaxWidth="{StaticResource ContentMaxWidth}" Padding="40,24,40,48" Spacing="28">
+            <TextBlock x:Uid="Settings_Title" Style="{StaticResource TitleTextBlockStyle}" />
+
+            <StackPanel Spacing="8">
+                <TextBlock x:Uid="Settings_General" Style="{StaticResource SubtitleTextBlockStyle}" />
+                <TextBlock x:Uid="Settings_OutputFolder" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                <RadioButton x:Uid="Settings_SameFolder" IsChecked="{x:Bind ViewModel.UseSameFolder, Mode=TwoWay}" GroupName="OutputFolder" Checked="OnSettingChanged" />
+                <RadioButton x:Uid="Settings_CustomFolder" IsChecked="{x:Bind ViewModel.UseCustomFolder, Mode=TwoWay}" GroupName="OutputFolder" Checked="OnSettingChanged" />
+                <Grid ColumnSpacing="8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox Grid.Column="0" Text="{x:Bind ViewModel.CustomOutputFolder, Mode=TwoWay}" IsReadOnly="True" />
+                    <Button Grid.Column="1" x:Uid="Settings_Browse" Command="{x:Bind ViewModel.BrowseFolderCommand}" />
+                </Grid>
+            </StackPanel>
+
+            <StackPanel Spacing="8">
+                <TextBlock x:Uid="Settings_ExistingFile" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                <RadioButton x:Uid="Settings_CreateNewName" IsChecked="{x:Bind ViewModel.CreateNewName, Mode=TwoWay}" GroupName="Existing" Checked="OnSettingChanged" />
+                <RadioButton x:Uid="Settings_Ask" IsChecked="{x:Bind ViewModel.AskWhenExists, Mode=TwoWay}" GroupName="Existing" Checked="OnSettingChanged" />
+                <RadioButton x:Uid="Settings_Overwrite" IsChecked="{x:Bind ViewModel.OverwriteExisting, Mode=TwoWay}" GroupName="Existing" Checked="OnSettingChanged" />
+            </StackPanel>
+
+            <StackPanel Spacing="8">
+                <TextBlock x:Uid="Settings_Language" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                <RadioButton x:Uid="Settings_Turkish" IsChecked="{x:Bind ViewModel.UseTurkish, Mode=TwoWay}" GroupName="Language" Checked="OnSettingChanged" />
+                <RadioButton x:Uid="Settings_English" IsChecked="{x:Bind ViewModel.UseEnglish, Mode=TwoWay}" GroupName="Language" Checked="OnSettingChanged" />
+            </StackPanel>
+
+            <StackPanel Spacing="8">
+                <TextBlock x:Uid="Settings_OfficeEngine" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                <RadioButton x:Uid="Settings_OfficeAuto" IsChecked="{x:Bind ViewModel.UseOfficeAuto, Mode=TwoWay}" GroupName="OfficeEngine" Checked="OnSettingChanged" />
+                <RadioButton x:Uid="Settings_OfficeMicrosoft" IsChecked="{x:Bind ViewModel.UseOfficeMicrosoft, Mode=TwoWay}" GroupName="OfficeEngine" Checked="OnSettingChanged" />
+                <RadioButton x:Uid="Settings_OfficeLibre" IsChecked="{x:Bind ViewModel.UseOfficeLibre, Mode=TwoWay}" GroupName="OfficeEngine" Checked="OnSettingChanged" />
+            </StackPanel>
+
+            <StackPanel Spacing="8">
+                <TextBlock x:Uid="Settings_Privacy" Style="{StaticResource SubtitleTextBlockStyle}" />
+                <TextBlock x:Uid="Settings_PrivacyLocal" TextWrapping="Wrap" />
+                <TextBlock x:Uid="Settings_PrivacyCloud" TextWrapping="Wrap" Opacity="0.8" />
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>LocalConvert.Images</RootNamespace>
+    <AssemblyName>LocalConvert.Images</AssemblyName>
+    <Description>Image to PDF conversion.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="PDFsharp" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LocalConvert.Core\LocalConvert.Core.csproj" />
+  </ItemGroup>
+</Project>

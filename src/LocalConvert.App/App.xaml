@@ -1,0 +1,57 @@
+<Application
+    x:Class="LocalConvert.App.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+            </ResourceDictionary.MergedDictionaries>
+            <x:Double x:Key="ContentMaxWidth">960</x:Double>
+            <Style x:Key="ToolCardButtonStyle" TargetType="Button">
+                <Setter Property="HorizontalAlignment" Value="Stretch" />
+                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                <Setter Property="VerticalAlignment" Value="Stretch" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="MinHeight" Value="96" />
+                <Setter Property="Background" Value="{ThemeResource CardBackgroundFillColorDefaultBrush}" />
+                <Setter Property="BorderBrush" Value="{ThemeResource ControlStrokeColorDefaultBrush}" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="CornerRadius" Value="12" />
+            </Style>
+            <DataTemplate x:Key="ToolCardTemplate">
+                <Button Command="{Binding SelectCommand}" Style="{StaticResource ToolCardButtonStyle}">
+                    <Grid Padding="16" ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Border
+                            Width="44"
+                            Height="44"
+                            CornerRadius="10"
+                            Background="{ThemeResource SubtleFillColorSecondaryBrush}"
+                            VerticalAlignment="Top">
+                            <FontIcon
+                                Glyph="{Binding Glyph}"
+                                FontSize="18"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center" />
+                        </Border>
+                        <StackPanel Grid.Column="1" Spacing="4" VerticalAlignment="Center">
+                            <TextBlock
+                                Text="{Binding Title}"
+                                Style="{StaticResource BodyStrongTextBlockStyle}"
+                                TextWrapping="Wrap" />
+                            <TextBlock
+                                Text="{Binding Description}"
+                                Style="{StaticResource CaptionTextBlockStyle}"
+                                Opacity="0.75"
+                                TextWrapping="Wrap" />
+                        </StackPanel>
+                    </Grid>
+                </Button>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
