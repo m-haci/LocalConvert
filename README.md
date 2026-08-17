@@ -106,4 +106,4 @@ Hata bildirimleri ve geliştirme önerileri için GitHub Issues kullanılabilir.
 
 ## Lisans
 
-Bu depoda henüz bir lisans dosyası bulunmamaktadır. Bir lisans eklenene kadar kaynak kodun yeniden kullanımı veya dağıtımı için açık izin verilmiş sayılmaz.
+Bu proje [MIT Lisansı](LICENSE) altında açık kaynak olarak yayımlanmaktadır.
